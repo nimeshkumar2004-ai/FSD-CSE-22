@@ -1,5 +1,5 @@
 
-import book from "./Book";
+import book= from "./Book";
 function App(){
     const bookstore=bookdata.map((b)=>{
         return Book(b);
