@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Your Name</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: white;
+            color: #111;
+            font-family: "Times New Roman", serif;
+            font-size: 14px;
+        }
+
+        .resume {
+            width: 8.27in;
+            min-height: 11.69in;
+            margin: 20px auto;
+            padding: 35px 40px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+        }
+
+        .name {
+            font-size: 32px;
+            font-weight: normal;
+            margin-bottom: 2px;
+        }
+
+        .location {
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+        .contact {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 14px;
+        }
+
+        .contact a {
+            color: #111;
+            text-decoration: underline;
+        }
+
+        /* Sections */
+        .section {
+            margin-top: 10px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            border-bottom: 1px solid #555;
+            padding-bottom: 2px;
+            margin-bottom: 5px;
+        }
+
+        /* Education */
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .title {
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .date {
+            font-size: 15px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .sub {
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+
+        /* Skills */
+        .skills {
+            margin-left: 18px;
+            font-size: 15px;
+            line-height: 1.4;
+        }
+
+        .skills strong {
+            font-weight: bold;
+        }
+
+        /* Projects / Internships */
+        .item {
+            margin-bottom: 7px;
+        }
+
+        .item-title {
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .item-subtitle {
+            font-size: 15px;
+            font-style: italic;
+        }
+
+        .points {
+            margin: 3px 0 0 25px;
+            padding: 0;
+        }
+
+        .points li {
+            margin-bottom: 2px;
+            padding-left: 2px;
+            font-size: 14px;
+        }
+
+        /* Certificates */
+        .certificate {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        .certificate-name {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .certificate-date {
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .issuer {
+            font-size: 15px;
+            font-style: italic;
+            margin-top: -3px;
+            margin-bottom: 5px;
+        }
+
+        /* Print */
+        @media print {
+            body {
+                margin: 0;
+            }
+
+            .resume {
+                margin: 0;
+                width: 8.27in;
+                min-height: 11.69in;
+                padding: 30px 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="resume">
+
+    <!-- HEADER -->
+    <div class="header">
+
+        <div class="name">YOUR NAME</div>
+
+        <div class="location">
+            Ghaziabad, Uttar Pradesh
+        </div>
+
+        <div class="contact">
+            <span>📞 9876543210</span>
+            <span>✉ <a href="mailto:youremail@gmail.com">
+                youremail@gmail.com
+            </a></span>
+
+            <span>
+                <a href="https://linkedin.com/in/username">
+                    LinkedIn
+                </a>
+            </span>
+
+            <span>
+                <a href="https://github.com/username">
+                    GitHub
+                </a>
+            </span>
+
+            <span>
+                <a href="https://yourportfolio.com">
+                    Portfolio
+                </a>
+            </span>
+        </div>
+
+    </div>
+
+
+    <!-- EDUCATION -->
+    <div class="section">
+
+        <div class="section-title">
+            Education
+        </div>
+
+        <div class="row">
+            <div class="title">
+                B.Tech in Computer Science & Engineering
+            </div>
+
+            <div class="date">
+                2024 – 2028
+            </div>
+        </div>
+
+        <div class="sub">
+            <span>ABES Engineering College</span>
+            <span>CGPA – 7.5</span>
+        </div>
+
+
+        <div class="row">
+            <div class="title">
+                Class 12th (CBSE)
+            </div>
+
+            <div class="date">
+                2024
+            </div>
+        </div>
+
+        <div class="sub">
+            <span>Your School Name</span>
+            <span>85%</span>
+        </div>
+
+
+        <div class="row">
+            <div class="title">
+                Class 10th (CBSE)
+            </div>
+
+            <div class="date">
+                2022
+            </div>
+        </div>
+
+        <div class="sub">
+            <span>Your School Name</span>
+            <span>90%</span>
+        </div>
+
+    </div>
+
+
+    <!-- TECHNICAL SKILLS -->
+    <div class="section">
+
+        <div class="section-title">
+            Technical Skills
+        </div>
+
+        <div class="skills">
+            <strong>Languages:</strong>
+            C, C++, Java, Python, JavaScript
+        </div>
+
+        <div class="skills">
+            <strong>Web Technologies:</strong>
+            HTML, CSS, JavaScript
+        </div>
+
+        <div class="skills">
+            <strong>Developer Tools:</strong>
+            Git, GitHub, VS Code
+        </div>
+
+        <div class="skills">
+            <strong>Core Concepts:</strong>
+            Data Structures & Algorithms, OOP, DBMS
+        </div>
+
+    </div>
+
+
+    <!-- INTERNSHIPS -->
+    <div class="section">
+
+        <div class="section-title">
+            Internships
+        </div>
+
+        <div class="item">
+
+            <div class="row">
+                <div class="item-title">
+                    Company Name
+                </div>
+
+                <div class="date">
+                    June 2026 – Present
+                </div>
+            </div>
+
+            <div class="item-subtitle">
+                Software Development Intern | Remote
+            </div>
+
+            <ul class="points">
+                <li>
+                    Worked on web development projects using HTML,
+                    CSS and JavaScript.
+                </li>
+
+                <li>
+                    Developed and tested features to improve
+                    application functionality.
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- PROJECTS -->
+    <div class="section">
+
+        <div class="section-title">
+            Projects
+        </div>
+
+
+        <div class="item">
+
+            <div class="row">
+                <div class="item-title">
+                    College Event Management System
+                </div>
+
+                <div class="date">
+                    2026
+                </div>
+            </div>
+
+            <ul class="points">
+                <li>
+                    Developed a web-based platform for managing
+                    college events, registrations and participants.
+                </li>
+
+                <li>
+                    Implemented responsive UI using HTML, CSS and
+                    JavaScript.
+                </li>
+            </ul>
+
+        </div>
+
+
+        <div class="item">
+
+            <div class="row">
+                <div class="item-title">
+                    Car Selector Website
+                </div>
+
+                <div class="date">
+                    2026
+                </div>
+            </div>
+
+            <ul class="points">
+                <li>
+                    Created a website that recommends cars based
+                    on the user's budget.
+                </li>
+
+                <li>
+                    Used HTML, CSS and JavaScript for the
+                    interactive interface.
+                </li>
+            </ul>
+
+        </div>
+
+
+        <div class="item">
+
+            <div class="row">
+                <div class="item-title">
+                    AI Study Assistant
+                </div>
+
+                <div class="date">
+                    2026
+                </div>
+            </div>
+
+            <ul class="points">
+                <li>
+                    Designed a study assistance platform to help
+                    students organize and access learning resources.
+                </li>
+
+                <li>
+                    Implemented an interactive user interface
+                    using web technologies.
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- ACHIEVEMENTS -->
+    <div class="section">
+
+        <div class="section-title">
+            Achievements
+        </div>
+
+        <div class="item">
+            <div class="item-title">
+                Coding Achievement
+            </div>
+
+            <div class="item-subtitle">
+                Solved 100+ problems on coding platforms.
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- CERTIFICATES -->
+    <div class="section">
+
+        <div class="section-title">
+            Certificates
+        </div>
+
+        <div class="certificate">
+
+            <span class="certificate-name">
+                Data Structures & Algorithms
+            </span>
+
+            <span class="certificate-date">
+                2026
+            </span>
+
+        </div>
+
+        <div class="issuer">
+            Platform / Organization Name
+        </div>
+
+
+        <div class="certificate">
+
+            <span class="certificate-name">
+                Python Programming
+            </span>
+
+            <span class="certificate-date">
+                2026
+            </span>
+
+        </div>
+
+        <div class="issuer">
+            Platform / Organization Name
+        </div>
+
+    </div>
+
+
+    <!-- EXTRACURRICULAR -->
+    <div class="section">
+
+        <div class="section-title">
+            Extracurricular
+        </div>
+
+        <div class="item">
+
+            <div class="row">
+                <div class="item-title">
+                    College Technical Club
+                </div>
+
+                <div class="date">
+                    2025 – Present
+                </div>
+            </div>
+
+            <div class="item-subtitle">
+                Technical Member
+            </div>
+
+            <ul class="points">
+                <li>
+                    Participated in technical events, coding
+                    competitions and college activities.
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
